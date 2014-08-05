@@ -1,3 +1,8 @@
+---
+layout: default
+title:  Main page `~ C Langlois
+---
+
 #Christian Langlois
 
 ##Team Lead, Scrum Master, Ruby/Rails stack (html 5, css), web developer
