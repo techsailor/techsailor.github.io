@@ -1,13 +1,20 @@
-<h1>Christian Langlois</h1>
+---
+layout: default
+---
 
-<h2>Team Lead, Scrum Master, Ruby/Rails stack (html 5, css), web developer</h2>
+<div class="home">
 
-<h3>Summary</h3>
+  <h1>Posts</h1>
 
-<ul>
-<li> Qualification Linux 101.1 Certificate
-<li> OSS Contrib : AgileVenture.or article_vote Feature 
-<li> Recent Qualification Managing distributed teams
-</ul>
-<hr/>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
