@@ -1,19 +1,28 @@
 ---
-layout: default
-title:  Main page  | C Langlois
+layout: jumbotron-narrow/default
+title:  Page A
 ---
 
-#Christian Langlois
+#A Name
 
-##Team Lead, Scrum Master, Ruby/Rails stack (html 5, css), web developer
+##Agile development, Distributed Teams
+
+###Team Lead, Ruby/Rails stack (html 5, css), 
+
+###Contributor to AgileVentures.org Project WebsiteOne
 
 ###Recent Qualifications
-
 
 - Qualification Linux 101.1 Certificate
 - OSS Contrib : AgileVenture.or article_vote Feature 
 - Recent Qualification Managing distributed teams
 
-Just checking ...
----
+###Ruby
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
+
 

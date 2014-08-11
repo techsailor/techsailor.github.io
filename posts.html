@@ -1,0 +1,18 @@
+---
+layout: jumbotron-narrow/default
+title:  Posts
+---
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for list_post in site.posts %}
+      <li>
+        <span class="post-date">{{ list_post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ list_post.url | prepend: site.baseurl }}">{{ list_post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+

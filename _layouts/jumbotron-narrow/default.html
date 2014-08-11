@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include jumbotron-narrow/head.html %}
+
+  <body>
+    <div class="container">
+      {% if page.url == "/" %} <div class="header">{% endif %}
+      {% include jumbotron-narrow/navbar.html %}
+      {% if page.url == "/" %} </div>{% endif %}
+      {{ content }}
+      {% include jumbotron-narrow/footer.html %}
+    </div>
+    
+    {% include jumbotron-narrow/foot_js.html %}
+  </body>
+
+</html>
