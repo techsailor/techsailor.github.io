@@ -5,7 +5,7 @@ description: "Christian Langlois, An experienced software consultant, available 
 baseurl: ""
 url: "http://saasbook.home:4000"
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  techsailor
 
 # Build settings
 markdown: kramdown

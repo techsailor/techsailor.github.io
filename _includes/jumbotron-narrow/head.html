@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.description }}">
   <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="icon" href="http://getbootstrap.com/favicon.ico">
   
-  <title>Narrow Jumbotron Template for Bootstrap</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <!-- Bootstrap -->
   <!-- core CSS -->
@@ -19,16 +20,13 @@
 -->
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl | prepend: site.url }}">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ '/css/site.css' | prepend: site.baseurl | prepend: site.url }}">
 
   <!--  jumbotron-narrow -->
   <link href="{{ '/css/jumbotron-narrow.css' | prepend:site.baseurl | prepend: site.url }}" rel="stylesheet"> 
 
   <!-- Colourisation -->
-  <link rel="stylesheet" href="{{ '/css/colourise.css' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="{{ '/css/colourise.css' | prepend: site.baseurl | prepend: site.url }}" rel="stylesheet"">
 
 
 

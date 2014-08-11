@@ -1,17 +1,10 @@
-<footer class="site-footer">
-
-  <div class="wrap">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-1 column">
-      <ul>
-        <li>{{ site.title }}</li>
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-      </ul>
+<footer>
+  <div class="row">
+    <div class="col-md-6"><!-- col 1 -->
+      <p>© Company 2014</p>
     </div>
 
-    <div class="footer-col-2 column">
+    <div class="col-md-6"><!-- col 2 -->
       <ul>
         {% if site.github_username %}<li>
           <a href="https://github.com/{{ site.github_username }}">
@@ -50,12 +43,6 @@
           </a>
         </li>{% endif %}
       </ul>
-    </div>
-
-    <div class="footer-col-3 column">
-      <p class="text">{{ site.description }}</p>
-    </div>
-
-  </div>
-
+    </div><!-- col-md-6 -->
+  </div><!-- Row -->
 </footer>

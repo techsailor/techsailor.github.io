@@ -1,0 +1,19 @@
+body {
+    background-color: #ffffff;
+}
+
+.github-icon-svg,
+.twitter-icon-svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+}
+/* makes navbar fit to container */
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
