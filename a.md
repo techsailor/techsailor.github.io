@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  Main page  | C Langlois
+title:  page a
 ---
 
-#Christian Langlois
+#C Who ?
 
 ##Team Lead, Scrum Master, Ruby/Rails stack (html 5, css), web developer
 
