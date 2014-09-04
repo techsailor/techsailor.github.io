@@ -294,4 +294,5 @@ Jekyll processing.
 
 ####Further reading
 
-Github Document [Using Jekyll with pages](https://help.github.com/articles/using-jekyll-with-pages)
+* Github Help Document [Using Jekyll with pages](https://help.github.com/articles/using-jekyll-with-pages)
+* Jekyll Documentation [Github pages with Jekyll](http://jekyllrb.com/docs/github-pages/)
