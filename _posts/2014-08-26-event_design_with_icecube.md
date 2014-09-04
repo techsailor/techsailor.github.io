@@ -50,6 +50,7 @@ every event in the table to update the *next_occurence*. But this need
 only occure once per day.
 
 Something along the lines of :
+
     defun daily_event_refresh(date)
       Events.all.each do |e|
         e.save
@@ -60,8 +61,9 @@ Something along the lines of :
 * future events (by next_occurence) can be ignored 
 
 * past events that have passed their last occurence time can also be
-ignored. To achieve this, an is_expired column is required on the event
-table to filter those out too.
+ignored. To make the query efficient maybe, a *is_expired* column is
+required on the event table to be able to filter those out at the
+Database level.
 
 ####Difference
 
@@ -265,8 +267,8 @@ Reason:
 
 * It becomes available when the event is instantiated.
 
-        e = Event.find(:id event_id)
-        e.schedule.next(10) # produces the next 10 occurrences # simple :-)
+    e = Event.find(:id event_id)
+    e.schedule.next(10) # produces the next 10 occurrences # simple :-)
 
 * IceCube::Schedule is has a well documented interface, and I'm sure
   we could not do better ourselves in terms of efficiency and
