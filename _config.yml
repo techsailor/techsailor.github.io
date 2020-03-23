@@ -4,7 +4,7 @@ email: your-email@domain.com
 description: "Christian Langlois, An experienced software consultant, available for hire for. Read about my work and recent projects. www.redtoad.co.uk"
 baseurl: ""
 #url: "http://saasbook.home:4000"
-url: "http://techsailor.github.io/"
+url: "https://techsailor.github.io/"
 twitter_username: jekyllrb
 github_username:  techsailor
 
