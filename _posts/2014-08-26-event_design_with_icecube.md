@@ -4,7 +4,7 @@ title:  "Event Design"
 date: 2014-08-26
 categories: design
 ---
-###Simple Event
+### Simple Event ###
 
 The simplest event has only a title and a schedule. The shedule
 describes when the event occurs. eg title:"*My Birthday*",
