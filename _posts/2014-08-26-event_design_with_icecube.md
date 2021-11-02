@@ -24,7 +24,7 @@ end
 
 {% endhighlight %}
 
-###Optimise by time
+### Optimise by time
 
 The optimised version adds the *next_occurence* attribute, which is
 also used as a key in an index. Events now have a timeline.
@@ -65,7 +65,7 @@ ignored. To make the query efficient maybe, a *is_expired* column is
 required on the event table to be able to filter those out at the
 Database level.
 
-####Difference
+#### Difference
 
 This is a little different to the current model. Currently, events are
 generated on the fly. 
@@ -112,7 +112,7 @@ sorted, in order to find the next scrum time for count-down.
 
 I'll discuss filling into the future after the next section.
 
-###Attributes
+### Attributes
 
 Events can gain attributes over time, eg. hoa_url, actual_duration,
 participants, Aggendas, etc. An attribute actually belongs to an event
