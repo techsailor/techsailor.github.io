@@ -24,7 +24,7 @@ end
 
 {% endhighlight %}
 
-### Optimise by time
+### Optimise by time ###
 
 The optimised version adds the *next_occurence* attribute, which is
 also used as a key in an index. Events now have a timeline.
@@ -65,7 +65,7 @@ ignored. To make the query efficient maybe, a *is_expired* column is
 required on the event table to be able to filter those out at the
 Database level.
 
-#### Difference
+#### Difference ####
 
 This is a little different to the current model. Currently, events are
 generated on the fly. 
@@ -112,7 +112,7 @@ sorted, in order to find the next scrum time for count-down.
 
 I'll discuss filling into the future after the next section.
 
-### Attributes
+### Attributes ###
 
 Events can gain attributes over time, eg. hoa_url, actual_duration,
 participants, Aggendas, etc. An attribute actually belongs to an event
@@ -138,7 +138,7 @@ AttributeItem table) an occurrence exists in the database.
 * event_type has been added for convenience to allow types of events to
 be selected directly without a join.
 
-###Prefill-forward
+### Prefill-forward ###
 
 We could arrange to populate occurences with a pseudo attribute, just
 to cause a presence. A *Presence* attribute, would allow us to create
@@ -148,14 +148,14 @@ Using the model like this would allow the query behind the Event index
 pages into a simple select via the index. Past events can also be
 retrieved.
 
-###Schedule Updates - What happens
+### Schedule Updates - What happens ###
 
 When there are updates to the schedule, it will affect the keys and
 indexes.
 
 I'll look at this in more detail.
 
-####Event
+#### Event ####
 
 * The schedule is part of the event and will be serialised during
   `event.save`
@@ -164,7 +164,7 @@ I'll look at this in more detail.
 
 That's it for events.
 
-####AttributeItems
+#### AttributeItems ####
 
 * Items on past occurences do not need to be updated, they have
   recorded what has happened and don't need to be touched.
@@ -179,7 +179,7 @@ I think the easiest way to deal with these are to update each existing
 occurence time with the new time, in sequence. But we may end up with
 more or fewer occurences as a result of the schedule change.
 
-####Example
+#### Example ####
  
 We have a 3 desgin meetings every 2 days, each with their own aggenda
 file attached.
@@ -193,7 +193,7 @@ file attached.
 
 If the schedule changed to: 
 
-#### More occurences, ie Six daily meetings.
+#### More occurences, ie Six daily meetings. ####
 
 Then how do we fill them ? 
 
@@ -208,7 +208,7 @@ Suggestion:
              new_next+4          -> 25/8/2014 10:00 utc, Presence:
              new_next+5          -> 26/8/2014 10:00 utc, Presence:
 
-#### Fewer occurences, ie Two daily meetings.
+#### Fewer occurences, ie Two daily meetings. ####
 
 Then how do they merge ? 
 
@@ -221,7 +221,7 @@ The 22nd August has two aggenda's attached.
 
 In each case only the user really knows what is best.
 
-##Sub classing Events
+## Sub classing Events ##
 
 There might be a requirement to sub-class an event if different
 behaviour is needed. A *hoa_event* for example, may have an
@@ -234,7 +234,7 @@ summer, which is built into Rails' Active Record implimentation.
 
 An attribute named type has been added to facilitate STI, read more at [api-rubyonrails.org](http://api.rubyonrails.org/classes/ActiveRecord/Base.html#class-ActiveRecord::Base-label-Single+table+inheritance).
 
-##What can we improve
+## What can we improve ##
 
 Well it's interesting, because what we have is similar but not really
 the same.
@@ -257,9 +257,9 @@ are both redundant.
 
 ![](http://yuml.me/3fc6bfa9)
 
-##Change summary
+## Change summary ##
 
-###Store the Schedule
+### Store the Schedule ###
 
 We should store the schedule in the event and not chuck it away.
 
@@ -275,13 +275,13 @@ Reason:
   performance. (Isn't this why we have chosen the Gem in the first
   place?)
 
-###Add timeline
+### Add timeline ###
 
 Add *next_occurence* as described above. As the quantity of events
 increase, being able to retrieve by time becomes more important to the
 application and event index/filtering pages.
 
-###Simplify our interface
+### Simplify our interface ###
 
 * remove our invented schedule variables and use the stored
   IceCube::Schedule directly. Candidates : `start_time, repeats,
@@ -321,7 +321,7 @@ application and event index/filtering pages.
   time. So maybe it is better to get rid of this and use the duration
   in the schedule.
 
-###Move Attributes
+### Move Attributes ###
 
 * create the AttributeItem model as described above. (Should it be
   named EventInstanceAttribute instead ?
@@ -342,11 +342,11 @@ Possible Attributes types
 * Client Meeting Indicator
 * remind participants via email Indicator
 
-###Remove hangouts
+### Remove hangouts ###
 
 * refactor the hangouts to use AtributeItems.
 
-###Other possible improvements
+### Other possible improvements ###
 
 * a means to eliminate expired events, ie events (both single and
   repeating) where they have reach their last occurrence, because they
@@ -357,6 +357,6 @@ Possible Attributes types
 
 * archive really old events, to keep the tables lean. (once per month).
 
-###Future - STI
+### Future - STI ###
 
 Maybe sub-class with STI ?
