@@ -4,6 +4,13 @@ title: About
 permalink: /about/
 ---
 
+I forget what this was all about, there are so many websites now.
+
+[This one https://techsailor.github.io/about/] (https://techsailor.github.io/about/)
+[gitlab Usersite https://clanglois.gitlab.io/] (https://clanglois.gitlab.io/)
+
+
+
 This is the base Jekyll theme. You can find out more info about
 customizing your Jekyll theme, as well as basic Jekyll usage
 documentation at [jekyllrb.com](http://jekyllrb.com/)
