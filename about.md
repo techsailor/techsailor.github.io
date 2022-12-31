@@ -6,8 +6,10 @@ permalink: /about/
 
 I forget what this was all about, there are so many websites now.
 
-[This one https://techsailor.github.io/about/] (https://techsailor.github.io/about/)
+[github techsailor.github.io/about/] (https://techsailor.github.io/about/)
 [gitlab Usersite https://clanglois.gitlab.io/] (https://clanglois.gitlab.io/)
+[gitlab play-blog https://clanglois.gitlab.io/play-blog] (https://clanglois.gitlab.io/play-blog)
+[gitlab a-techie.co.uk https://clanglois.gitlab.io/a-techie.co.uk] (https://clanglois.gitlab.io/a-techie.co.uk)
 
 
 
