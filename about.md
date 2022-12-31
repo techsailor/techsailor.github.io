@@ -1,17 +1,17 @@
 ---
-layout: jumbotron-narrow/default
+layout: default
 title: About
 permalink: /about/
 ---
 
 I forget what this was all about, there are so many websites now.
 
-[github techsailor.github.io/about/] (https://techsailor.github.io/about/)
-[gitlab Usersite https://clanglois.gitlab.io/] (https://clanglois.gitlab.io/)
-[gitlab play-blog https://clanglois.gitlab.io/play-blog] (https://clanglois.gitlab.io/play-blog)
-[gitlab a-techie.co.uk https://clanglois.gitlab.io/a-techie.co.uk] (https://clanglois.gitlab.io/a-techie.co.uk)
+- [github techsailor.github.io/about/] (https://techsailor.github.io/about/)
+- [gitlab Usersite clanglois.gitlab.io/] (https://clanglois.gitlab.io/)
+- [gitlab play-blog clanglois.gitlab.io/play-blog] (https://clanglois.gitlab.io/play-blog)
+- [gitlab a-techie.co.uk clanglois.gitlab.io/a-techie.co.uk] (https://clanglois.gitlab.io/a-techie.co.uk)
 
-
+---
 
 This is the base Jekyll theme. You can find out more info about
 customizing your Jekyll theme, as well as basic Jekyll usage
