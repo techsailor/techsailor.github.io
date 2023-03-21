@@ -6,12 +6,12 @@ permalink: /about/
 
 I forget what this was all about, there are so many websites now.
 
-|vendor | name      | link        |
-|------ | --------- | ----------- |
-| github| techsailor| [techsailor.github.io/about/](https://techsailor.github.io/about/)  |
-| gitlab| user-site | [clanglois.gitlab.io/](https://clanglois.gitlab.io/)|
-| gitlab| play-blog | [clanglois.gitlab.io/play-blog](https://clanglois.gitlab.io/play-blog) |
-| gitlab| a-techie.co.uk | [clanglois.gitlab.io/a-techie.co.uk ](https://clanglois.gitlab.io/a-techie.co.uk) |
+| vendor | name           | link        |
+| ------ | -------------  | ----------- |
+| github | techsailor     | [techsailor.github.io/about/](https://techsailor.github.io/about/)  |
+| gitlab | user-site      | [clanglois.gitlab.io/](https://clanglois.gitlab.io/) | falis|
+| gitlab | play-blog      | [clanglois.gitlab.io/play-blog](https://clanglois.gitlab.io/play-blog) |
+| gitlab | a-techie.co.uk | [clanglois.gitlab.io/a-techie.co.uk ](https://clanglois.gitlab.io/a-techie.co.uk) |
 
 
 
