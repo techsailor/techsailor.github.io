@@ -4,7 +4,7 @@ title:  "4 Ways to use Jekyll with Github pages"
 date:   2014-08-11 20:20:51
 categories: jekyll github-pages github
 ---
-##Jekyll
+## Jekyll
 
 [Jekyll](http://jekyllrb.com/docs/home/) is a static website
 generator. It traverses a directory structure searching for content
@@ -24,7 +24,7 @@ amongst other things, variables, which can be used in templates. Their
 values can be set in yaml data files, or as a yaml Frontmatter at the
 head of the individual files.
 
-##Github pages
+## Github pages
 
 Github pages have existed for sometime now, and is a handy free
 hosting resource for small websites. 
@@ -85,7 +85,7 @@ Then
 Will push your local `master` branch to the `origin` `master` branch.
 
 
-###Project Level
+### Project Level
 
 This give you a documentation area for your project, so the repository
 is your project repository, but you must the `gh-pages` branch to
@@ -103,7 +103,7 @@ The `gh-pages` branch must be updated to trigger a jekyll build.
 The [Github instructions](https://pages.github.com/) can be read for
 more information.
 
-###Assumptions
+### Assumptions
 
 Let's say I want to create a user website and my account name is named
 *techsally* at Github.
@@ -151,9 +151,9 @@ To view the github pages site the url would be :
 
 ## Method 2
 
-###Using Github's *Automatic Page Generator*
+### Using Github's *Automatic Page Generator*
 
-####The Basic flow
+#### The Basic flow
 
 Under your project settings, you use the *Automatic Page Generator*
 option. Clicking this brings up a pre filled edit form for the page
@@ -292,7 +292,7 @@ Jekyll processing.
 
 ----
 
-####Further reading
+#### Further reading
 
 * Github Help Document [Using Jekyll with pages](https://help.github.com/articles/using-jekyll-with-pages)
 * Jekyll Documentation [Github pages with Jekyll](http://jekyllrb.com/docs/github-pages/)
