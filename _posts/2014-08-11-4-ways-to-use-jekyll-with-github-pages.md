@@ -44,14 +44,14 @@ locally. To publish you need to push your changes to a particular
 branch on your Github repo, this triggers Github to process that
 branch and publish your website.
 
-###It's all in the name
+### It's all in the name
 
 Github provide 2 basic publishing mechanisms.
 
 1. Account level (Either user or organisation accounts)
 2. Project Level
 
-###Account Level
+### Account Level
 
 Github refers to these also as User or Organisational pages. 
 
